@@ -11,7 +11,13 @@ places
 session.*
 recentf
 ido.last
+history
+url/
+request/
+
 
 # Compiled files and package manager caches
 *.elc
 /.cask/
+elpa/
+straight/
