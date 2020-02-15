@@ -1,3 +1,7 @@
+(desktop-save-mode 1)
+(setq desktop-auto-save-timeout 300)
+(setq desktop-restore-reuses-frames 1)
+
 ;; use more commin symbols 
 (setq whitespace-display-mappings
       ;; all numbers are Unicode codepoints in decimal. ℯℊ (insert-char 182 1)
@@ -19,6 +23,8 @@
 ;; in org-mode syntax highligt code in code blocks
 (setq org-src-fontify-natively t)
 
+(require 'package)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -27,10 +33,20 @@
  '(filesets-data
    (quote
     (("Teste"
-      (:files "C:\\Users\\agranero\\Desktop\\1.txt" "C:\\Users\\agranero\\Desktop\\2.txt"))))))
+      (:files "C:\\Users\\agranero\\Desktop\\1.txt" "C:\\Users\\agranero\\Desktop\\2.txt")))))
+ '(package-archives
+   (quote
+    (("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa" . "https://melpa.org/packages/")
+     ("melpa-stable" . "http://stable.melpa.org/packages/"))))
+ '(package-selected-packages (quote (elixir-mode haskell-mode)))
+ '(save-place t nil (saveplace)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
+(package-initialize)
