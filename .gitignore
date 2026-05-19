@@ -1,0 +1,17 @@
+# Editor backup and auto-save files
+*~
+#*#
+.saves*
+*.lock
+
+# Session and state persistence
+filesets-cache.el
+places
+.emacs.desktop
+session.*
+recentf
+ido.last
+
+# Compiled files and package manager caches
+*.elc
+/.cask/
